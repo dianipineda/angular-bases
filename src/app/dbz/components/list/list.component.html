@@ -1,0 +1,21 @@
+<h4>personajes</h4>
+<ul class="list-group">
+  <li
+    class="list-group-item"
+    *ngFor="
+      let character of characterList;
+      let i = index;
+      let isFirst = first;
+      let isLast = last;
+      let isEven = even;
+      let isOdd = odd
+    "
+  >
+    <span>{{ i }}</span>
+    <span> {{ character.name }} - {{ character.power }} </span>
+    <span> - {{ isFirst }}</span>
+    <span> - {{ isLast }}</span>
+    <span> - {{ isEven }}</span>
+    <span> - {{ isOdd }}</span>
+  </li>
+</ul>
