@@ -2,6 +2,10 @@
 <ul class="list-group">
   <li
     class="list-group-item"
+    [ngClass]="{
+      'list-group-item-dark': isLast,
+      'list-group-item-primary': isEven
+    }"
     *ngFor="
       let character of characterList;
       let i = index;
